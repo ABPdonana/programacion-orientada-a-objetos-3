@@ -1,10 +1,10 @@
 class Lector():
 
-    def __init__(self, numero, nombre, apellidos, moroso=False):
+    def __init__(self, numero, nombre, apellidos):
         self.__numero = numero
         self.__nombre = nombre
         self.__apellidos = apellidos
-        self.__moroso = moroso
+        self.__moroso = False
 
     def numero(self):
         return self.__numero
