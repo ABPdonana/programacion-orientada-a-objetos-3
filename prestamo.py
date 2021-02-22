@@ -21,5 +21,5 @@ class Prestamo():
 
     def devuelve_libro(self, fecha_devolucion):
         self.__fecha_devolucion = fecha_devolucion
-        if self.__fecha_prestamo + timedelta(15) == self.__fecha_devolucion:
+        if self.__fecha_prestamo + timedelta(15) != self.__fecha_devolucion:
             self.__lector.set_moroso()
