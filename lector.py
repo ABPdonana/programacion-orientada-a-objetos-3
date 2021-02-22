@@ -17,3 +17,6 @@ class Lector():
 
     def moroso(self):
         return self.__moroso
+
+    def set_moroso(self):
+        self.__moroso = True
