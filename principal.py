@@ -28,3 +28,6 @@ print(f'El lector {lector1.nombre()} {lector1.apellidos()} es moroso: {lector1.m
 
 #Prestar un libro devuelto
 prestamo5 = Prestamo(lector2, libro1, datetime(2021, 2, 23))
+
+#Imprimir lista de los libros alquilados
+print(Prestamo.libros_prestados())

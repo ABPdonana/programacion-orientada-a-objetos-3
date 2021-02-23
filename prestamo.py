@@ -6,6 +6,10 @@ class Prestamo():
 
     __libro_prestamos = {}
 
+    @staticmethod
+    def libros_prestados():
+        return Prestamo.__libro_prestamos
+
     def __init__(self, lector, libro, fecha_prestamo):
         if libro.codigo() in Prestamo.__libro_prestamos:
             raise NameError("Libro ya alquilado")
